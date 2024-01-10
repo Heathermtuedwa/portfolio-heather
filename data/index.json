@@ -1,0 +1,76 @@
+{
+    "Project":[{
+         "id":3,
+         "ProjectName":"Netfilx",
+         "url":"https://netflix-project-roan.vercel.app/"
+ 
+    },
+    {
+     "id":4,
+     "ProjectName":"To-Do list",
+     "url":"https://todo-list-3s1q.vercel.app/"
+    },
+    {
+     "id":5,
+     "ProjectName":"Interest calculator",
+     "url":"https://interest-amount-one.vercel.app/"
+    },
+    {
+     "id":6,
+     "ProjectName":"Age to Days",
+     "url":"https://age-to-days-orcin.vercel.app/"
+    }
+    
+ ],
+ "resume":[{
+    "id":8,
+    "name":"project",
+    "description":""
+ },
+  {
+    "id":9,
+    "name":"skills",
+    "description":""
+  },
+  {
+    "id":10,
+    "name":"education",
+    "description":""
+  }
+
+],
+ "testmonials":[{
+    "id":10,
+    "name":"Thandeka",
+    "description":""
+
+ },
+ {
+    "id":11,
+    "name":"Ntando",
+    "description":""
+ },
+ {
+    "id":12,
+    "name":"Onika",
+    "description":""
+ },
+ {
+    "id":13,
+    "name":"Haainm",
+    "description":""
+ },
+ {
+    "id":14,
+    "name":"Ammara",
+    "description":""
+ },
+ {
+    "id":15 ,
+    "name":"CJ",
+    "description":""
+ }
+]
+ 
+ }
+ 
