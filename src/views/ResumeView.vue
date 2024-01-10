@@ -1,6 +1,6 @@
-<template lang="">
+<template >
     <div>
-        <h1>Resume page</h1>
+       
     </div>
 </template>
 <script>
