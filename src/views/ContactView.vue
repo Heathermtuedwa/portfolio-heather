@@ -14,13 +14,13 @@
     Your message:
     <textarea name="message"></textarea>
   </label>
-  <!-- your other form fields go here -->
+  
   <button type="submit">Send</button>
 </form>
     
     <div class="contact-info">
-      <p>Email: your.email@example.com</p>
-      <p>Phone: +1 (123) 456-7890</p>
+      <p>heathermtuedwa@gmail.com</p>
+      <p>Phone: 065 526 1545 </p>
     </div>
 
   </div>
