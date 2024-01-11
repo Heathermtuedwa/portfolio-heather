@@ -6,14 +6,15 @@
   <div class="content">
     <h2 class="h-animated">About Me</h2>
     <p class="animated">
-      "Hello! I'm Heather Mtuedwa, a passionate individual with a keen interest in [mention your interests or field].
-       With a background in [mention your educational or professional background], I am dedicated to [mention your goals or mission].
-        In my free time, you can find me [mention any hobbies or activities you enjoy]. 
-        I believe in [mention your values or principles], and I am always excited to [mention something you are enthusiastic about or working on].
-         Let's connect and explore the world together!
+      Hello! I'm Heather Mtuedwa, a person who loves [mention your interests or field]. 
+      I went to QueensPark School and graduated in 2022. i first became intersted in this file when i did CAT in highschool,
+       CAT is different from coding but it got me intersted to explore more in this field
+       I am dedicated to becoming a web developer one day. In my free time, you can find me reading or enjoying outdoor activities.
+        I believe in respecting one another and establishing boundaries. I'm always excited to learn and explore new things.
     </p>
     <p class="animated">
-      "Passionate individual with a love for [interest]. Dedicated to [goal].
+      "Passionate individual with a love for [interest]. 
+      Dedicated to success and having a great career one day.
        Enthusiastic, creative, and ready for new challenges."
     </p>
   </div>
@@ -21,14 +22,12 @@
  </template>
 
 
-
 <style scoped>
-
-
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #555;
 }
 
 .container {

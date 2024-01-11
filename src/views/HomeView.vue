@@ -45,17 +45,14 @@
        Aspiring web-developer
         </small>
         <div class="h-social">
-             <a href="" class="social vk-bg">
-               <i class="vercel"></i>
+             <a href="" class="social vk-bg"><i class="fa-solid fa-globe"></i>
                </a>
-              <a href="https://fontawesome.com/icons/facebook?f=brands&s=solid" class="social facebook-bg">
-               <i class="fab fa-facebook"></i>
-            </a>
+              <a href="" class="social facebook-bg"><i class="fa-brands fa-facebook"></i></a>
             <a href="" class="social instagram-bg">
-                <i class="Instagram"></i>
+              <i class="fa-brands fa-instagram"></i>
              </a>
            <a href="" class="social behance-bg">
-               <i class="GitHub"></i>
+            <i class="fa-brands fa-github"></i>
             </a>
 </div>
         <div class="buttons">
@@ -130,7 +127,6 @@ img{
 .avatar{
   width: 57px;
   height: 57px;
-  /* background:url(https://cdn.discordapp.com/avatars/538405353176432660/2c7976e2bde315224181763f6f845de9.png); */
   background-size: 100%;
   border-radius: 50%;
 }
@@ -244,7 +240,9 @@ img{
   
 }
 
-
+i {
+  color: #333333;
+}
 
 
 </style>
