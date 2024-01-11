@@ -1,17 +1,17 @@
-<template >
-    <div>
-      
-    </div>
+<template>
+   <div v-for="testmonial in Testimonials" :key="testmonial.id">
+     <p>{{ testmonial.name }}</p>
+   </div>
 </template>
 <script>
 export default {
     computed:{
-      testmonial(){
-        return this.$store.state.testmonial
+      Testimonials(){
+        return this.$store.state.testimonials
       }
     },
     mounted(){
-      this.$store.dispatch("fetchTestmonial")
+      this.$store.dispatch('fetchTestimonials')
     }
   }
 </script>
