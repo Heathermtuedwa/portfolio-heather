@@ -48,8 +48,8 @@
              <a href="" class="social vk-bg">
                <i class="vercel"></i>
                </a>
-              <a href="" class="social facebook-bg">
-               <i class="facebook"></i>
+              <a href="https://fontawesome.com/icons/facebook?f=brands&s=solid" class="social facebook-bg">
+               <i class="fab fa-facebook"></i>
             </a>
             <a href="" class="social instagram-bg">
                 <i class="Instagram"></i>
@@ -250,14 +250,5 @@ img{
 </style>
 
 <script>
-  export default {
-    computed:{
-      project(){
-        return this.$store.state.project
-      }
-    },
-    mounted(){
-      this.$store.dispatch("fetchProject")
-    }
-  }
+ 
 </script>
