@@ -1,6 +1,12 @@
 <template >
    <div>
-    
+    <ul class="cards">
+  <li class="cards__item">
+    <div class="card">
+      <div class="card__image card__image--fence"></div>
+    </div>
+  </li>
+    </ul>
    </div>
        
     

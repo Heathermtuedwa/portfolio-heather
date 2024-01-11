@@ -6,7 +6,7 @@ export default createStore({
   state: {
     project: null,
     resume: null,
-    testimonial: null,
+    testimonials: null,
   },
   getters: {},
   mutations: {
@@ -16,8 +16,8 @@ export default createStore({
     setResume(state, resume) {
       state.resume = resume;
     },
-    setTestimonial(state, testimonial) {
-      state.testimonial = testimonial;
+    setTestimonial(state, testimonials) {
+      state.testimonials = testimonials;
     },
   },
   actions: {
@@ -36,22 +36,15 @@ export default createStore({
       } catch(e){
 
       }
-    }
-  },
-  async fetchtestimonal(context){
-    try{
-      let result = await fetch(url)
-      let results = await result.json()
-      console.log(results)
-      let testimonial = results.testimonial
-      console.log(testimonial)
-      if(testimonial){
-        context.commit("setTestimonial", testimonial)
-      } else{
-        console.log("ERROR")
-      }
-    } catch(e){
+    },
 
+  async fetchTestimonials(context){
+    try{
+      let res = await fetch(url)
+      let result = await res.json()
+      console.log(result.testmonials);
+      context.commit("setTestimonial", result.testmonials)
+    } catch(e){  
     }
   },
   async fetchResume(context){
@@ -69,6 +62,5 @@ export default createStore({
     } catch(e){
       
     }
-  },
-  modules: {},
-})
+  }
+}})
