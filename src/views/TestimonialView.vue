@@ -1,15 +1,13 @@
 <template>
-  <div>
-  <div class="flip-card-back"></div>
-   <div v-for="testmonial in Testimonials" :key="testmonial.id">
-     <p>{{ testmonial.name }}</p>
-   </div>
-   <div v-for="testmonial in Testimonials" :key="testmonial.description">
-     <p>{{ testmonial.description}}</p>
-   </div>
-   </div>
-   
-   
+  <div class = "container">
+   <div v-for="testimonial in Testimonials" :key="testimonial.id" class="card" style="width: 18rem;">
+  <img :src="testimonial.url" class="card-img-top" :alt="testimonial.testimonialName">
+  <div class="card-body">
+    <h5 class="card-title">{{ testimonial.name }}</h5>
+    <p class="card-text">{{ testimonial.description }}</p>
+  </div> 
+</div>
+</div>
 </template>
 <script>
 export default {
@@ -24,48 +22,47 @@ export default {
   }
 </script>
 <style >
-    .flip-card {
-  background-color: transparent;
-  width: 300px;
+   .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Space around the cards */
+}
+
+.card {
+  width: 18rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  width: 100%;
   height: 200px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px; 
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  color: #555;
+}
+.card-text {
+  color: #555; /* Text color for the description */
 }
 
 
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 250%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-}
-
-
-.flip-card-front {
-  background-color:#4caf50
-  color(transparent)
-}
-
-
-.flip-card-back {
-  background-color: dodgerblue;
-  color: white;
-  transform: rotateY(180deg);
-}
 </style>
