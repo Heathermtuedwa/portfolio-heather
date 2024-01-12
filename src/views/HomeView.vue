@@ -144,7 +144,8 @@ img{
 .hero{
   padding-top: 80px;
   padding-bottom: 80px;
-  background:  linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 40%,rgba(0,0,0,0) 100%), url(https://ibb.co/RP00jtr) no-repeat right bottom;
+  background:  linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 40%,rgba(0,0,0,0) 100%), url(https://iili.io/JYJdqYu.jpg) no-repeat right bottom;
+  background-size: 30% auto; 
 }
 
 .subtitle{

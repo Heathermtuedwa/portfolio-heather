@@ -4,14 +4,14 @@ const url = "https://heathermtuedwa.github.io/json-data/database/";
 
 export default createStore({
   state: {
-    project: null,
+    Project: null,
     resume: null,
     testimonials: null,
   },
   getters: {},
   mutations: {
-    setProject(state, project) {
-      state.project = project;
+    setProject(state, Project) {
+      state.Project = Project;
     },
     setResume(state, resume) {
       state.resume = resume;
@@ -26,10 +26,10 @@ export default createStore({
         let result = await fetch(url)
         let results = await result.json()
         console.log(results)
-        let project = results.Project
-        console.log(project)
-        if(project){
-          context.commit("setProject", project)
+        let Project = results.Project
+        console.log(Project)
+        if(Project){
+          context.commit("setProject", Project)
         } else{
           console.log("ERROR")
         }
