@@ -1,7 +1,7 @@
 <template>
  <div  class="container">
   <div class="image">
-    <img src="https://ibb.co/RP00jtr" alt="About me">
+    <img src="https://iili.io/JYJdqYu.jpg" alt="About me">
   </div>
   <div class="content">
     <h2 class="h-animated">About Me</h2>

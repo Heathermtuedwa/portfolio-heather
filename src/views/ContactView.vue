@@ -17,13 +17,14 @@
   
   <button type="submit">Send</button>
 </form>
-    
     <div class="contact-info">
       <p>heathermtuedwa@gmail.com</p>
       <p>Phone: 065 526 1545 </p>
     </div>
 
   </div>
+  <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.274393079784!2d18.561711075512413!3d-33.9597861731919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc44d49efece99%3A0x262d8269175aed82!2s72%20David%20Atkins%20St%2C%20Charlesville%2C%20Cape%20Town%2C%207490!5e0!3m2!1sen!2sza!4v1705052371416!5m2!1sen!2sza" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
 </template>
 
 
