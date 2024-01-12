@@ -6,7 +6,7 @@
   <div class="content">
     <h2 class="h-animated">About Me</h2>
     <p class="animated">
-      Hello! I'm Heather Mtuedwa, a person who loves [mention your interests or field]. 
+      Hello! I'm Heather Mtuedwa. 
       I went to QueensPark School and graduated in 2022. i first became intersted in this file when i did CAT in highschool,
        CAT is different from coding but it got me intersted to explore more in this field
        I am dedicated to becoming a web developer one day. In my free time, you can find me reading or enjoying outdoor activities.
