@@ -1,254 +1,249 @@
 <template>
-  <div class="home">
-    <div class="container">
-    <div class="menu">
-    <div class="menu-logo">
-      <div class="avatar"></div>
-      <div class="discription">
-        
-        <small class="d_small">
-         
-        </small>
+  <link
+      href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Playfair+Display&=familyDancing+Script&family=Raleway:wght@400;500&family=Roboto+Slab:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+   <header class="header">
+      <div class="logo-box">
+        <!-- <img src="https://i.ibb.co/pyxK0Mz/prev2.gif" alt="logo" class="logo" /> -->
       </div>
-    </div>
-
-   
-    </div>
-  </div>
-
-  <div class="container">
-    <section class="hero">
-      <div class="hero-info">
-        <span class="subtitle">
-          Welcome to my Portfolio!
-        </span>
-      
-          <h1 class="title">
-            <span>H</span>
-            <span>e</span>
-            <span>a</span>
-            <span>t</span>
-            <span>h</span>
-            <span>e</span>
-            <span>r</span>
-            <span> </span>
-            <span>M</span>
-            <span>t</span>
-            <span>u</span>
-            <span>e</span>
-            <span>d</span>
-            <span>w</span>
-            <span>a</span>
-</h1>
-       
-        <small class="description">
-       Aspiring web-developer
-        </small>
-        <div class="h-social">
-             <a href="" class="social vk-bg"><i class="fa-solid fa-globe"></i>
-               </a>
-              <a href="" class="social facebook-bg"><i class="fa-brands fa-facebook"></i></a>
-            <a href="" class="social instagram-bg">
-              <i class="fa-brands fa-instagram"></i>
-             </a>
-           <a href="" class="social behance-bg">
-            <i class="fa-brands fa-github"></i>
-            </a>
-</div>
-        <div class="buttons">
-          <a href="contact" class="button button-primary">
-            Contact me
-          </a>
-          <a href="/about" class="button button-o">
-          Learn more about me
+      <div class="text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary-main">Heather Mtuedwa</span>
+          <span class="heading-primary-sub">Portfolio</span>
+        </h1>
+        <button class="btn">Enter</button>
+      </div>
+      <div class="socials">
+        <div class="facebook">
+          <a href="https://facebook.com">
+          <img src="img/facebook.png" alt="logo" class="fit" />
           </a>
         </div>
+
+        <div class="twitter">
+          <a href="https://www.twitter.com"
+            ><img src="img/Twitter.png" alt="logo" class="fit"
+          /></a>
+        </div>
       </div>
-    </section>
-  </div>
-  </div>
-  
+    </header>
 </template>
+
+<script>
+
+</script>
 
 
 <style scoped>
-.home {
-  max-width: 1800px;
-  margin: 0 auto;
-  padding: 20px;
+body {
+  margin: 0;
+  padding: 50px;
+  font-family: "Raleway", sans-serif;
+}
+
+.header {
+  height: 93vh;
+  background-image: linear-gradient(#111111be, #fccbcbe7),
+    url(https://images.unsplash.com/photo-1614349596894-ddb833522bec?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2160&q=80);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+  position: relative;
+}
+
+.logo-box {
+  position: absolute;
+  top: 10px;
+  left: 25px;
+}
+
+.logo {
+  cursor: pointer;
+  height: 60px;
+  width: 60px;
+  animation: fadeIn ease 7s;
+  animation-duration: 15s;
+  backface-visibility: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+.logo:hover {
+  height: 80px;
+  width: 80px;
+}
+
+.text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heading-primary {
+  color: #fff;
   text-align: center;
-  background-color: white;
-  height: 85vh;
+
+  backface-visibility: hidden;
 }
 
-header {
-  margin-bottom: 20px;
-}
-
-h1 {
-  font-size: 2.5em;
-  margin: 0;
-}
-
-p {
-  color: #b15858;
-  margin-bottom: 30px;
-}
-body{
-  font-family: 'Open Sans', sans-serif;
-  margin: 0;
-  
-  
-}
-img{
-  max-width: 100%;
-}
-.container{
-  width: 100%;
-  max-width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: -10px;
-}
-.menu{
-  margin-top: 18px;
-  margin-bottom: 25px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  align-items: center;
-}
-
-.menu-logo{
-  display: flex;
-  align-items: center;
-}
-
-.avatar{
-  width: 57px;
-  height: 57px;
-  background-size: 100%;
-  border-radius: 50%;
-}
-
-.discription{
-  margin-left: 9px;
-}
-
-.name{
+.heading-primary-main {
+  font-size: 80px;
+  font-family: "Playfair Display", serif;
   display: block;
-  font-size: 16px;
-  font-weight: 800;
+  letter-spacing: 1px;
+  animation-name: moveInTop;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
 }
 
-.hero{
-  padding-top: 80px;
-  padding-bottom: 80px;
-  background:  linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 10%,rgba(0,0,0,0) 100%), url(https://iili.io/JYJdqYu.jpg) no-repeat right bottom;
-  background-size: 50% auto;
-  
+.heading-primary-sub {
+  font-size: 20px;
+  display: block;
+  letter-spacing: 15px;
+  animation-name: moveInRight;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
 }
 
-.subtitle{
-  font-family: "Open Sans";
-  font-size: 32px;
-  font-weight: 400;
-}
-
-.title {
+.btn {
+  border: 1px solid #fff;
+  color: #fff;
+  background: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 40px;
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   overflow: hidden;
-  white-space: nowrap;
-  font-size: 2em;
-  /* display: block; */
+  border-radius: 100px;
+  transition-delay: 1s;
+  transition: color 4s;
+  animation: fadeIn ease 10s;
 }
 
-.title span {
-  opacity: 0;
-  transform: translateY(1em);
-  display: inline-block;
-  animation: fadeInUp 0.6s ease-out forwards;
+.btn:hover {
+  color: #838383;
 }
 
-@keyframes fadeInUp {
-  to {
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: #fff;
+  z-index: -1;
+  transition: 0.8s ease-in-out;
+  top: 0;
+}
+
+.btn:hover::before {
+  content: "";
+  height: 100%;
+}
+
+.socials {
+  
+  height: 100px;
+  width: 800px;
+  bottom: 400px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.fit {
+  height: 50px;
+  width: 50px;
+  animation: fadeIn ease 7s;
+  transition: 0.5s ease;
+}
+
+.twitter {
+  cursor: pointer;
+  margin: 10px;
+  display: inline;
+}
+
+.facebook {
+  cursor: pointer;
+  margin: 10px;
+  display: inline;
+}
+
+.instagram {
+  cursor: pointer;
+  margin: 10px;
+  display: inline;
+}
+
+.fit:hover {
+  height: 75px;
+  width: 75px;
+}
+
+.form {
+  width: 50%;
+  position: relative;
+  height: 50%;
+  margin: 100px;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translate(0);
   }
 }
 
-.title span:nth-child(2) {
-  animation-delay: 0.2s;
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
-.title span:nth-child(3) {
-  animation-delay: 0.4s;
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
-
-.description{
-  font-size: 18px;
-  color: #6a696b;
-}
-.h-social{
-  margin-top: 30px;
-}
-
-.social{
-  display: inline-block;
-  width: 41px;
-  height: 41px;
-  margin-right: 10px;
-  color: #fff;
-  text-align: center;
-  line-height: 41px;
+@keyframes zoomOut {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translateZ(80px);
+  }
 }
 
-.vk-bg{
-  background-color: #56acef;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-.facebook-bg{
-  background-color: #3a5898;
-}
-.instagram-bg{
-  background-color: #13578a;
-}
-.behance-bg{
-  background-color: #1869ff;
-}
-
-.buttons{
-  margin-top: 40px;
-}
-.button{
-  display: inline-block;
-  font-size: 16px;
-  font-weight: 800;
-  text-align: center;
-  text-decoration: none;
-  background-color: #2b2a2c;
-  border-radius: 50px;
-  padding: 20px 34px;
-  
-}
-.button-primary{
-  color: #fff;
-  margin-right: 17px;
-  margin-bottom: 10px;
-}
-.button-o{
-  background-color: #fff;
-  color: #6a696b;
-  border: 1px solid #6a696b;
-  
-}
-
-i {
-  color: #333333;
-}
-
 
 </style>
 
-<script>
- 
-</script>

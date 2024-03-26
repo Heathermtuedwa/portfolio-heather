@@ -25,7 +25,7 @@
   </div >
   <div class="container">
   <div class="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.274393079784!2d18.561711075512413!3d-33.9597861731919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc44d49efece99%3A0x262d8269175aed82!2s72%20David%20Atkins%20St%2C%20Charlesville%2C%20Cape%20Town%2C%207490!5e0!3m2!1sen!2sza!4v1705052371416!5m2!1sen!2sza" width="400" height="300" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6618.478888037705!2d18.556915564837613!3d-33.96068461626794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc44d455026ac1%3A0xb14952350b32e3c4!2sCharlesville%2C%20Cape%20Town%2C%207490!5e0!3m2!1sen!2sza!4v1709641065177!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">" width="400" height="300" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
     </iframe>
   </div>
   </div>
@@ -63,6 +63,8 @@ textarea {
   padding: 8px;
   margin-bottom: 16px;
   box-sizing: border-box;
+  border-radius: 10px;
+
 }
 
 button {
@@ -81,7 +83,7 @@ button:hover {
   margin-top: 20px;
 }
 
-/* Additional styling for the contact information */
+
 .contact-info p {
   margin: 8px 0;
   font-weight: bold;
