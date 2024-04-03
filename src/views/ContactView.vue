@@ -34,72 +34,86 @@
 
 
     <style>
-    .contact {
-  max-width: 800px;
-  margin: 0 auto;
+     .contact {
+  margin: 20px;
   padding: 20px;
-  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  animation: fadeIn 0.5s ease-in-out; /* Adding fadeIn animation */
 }
 
-h2 {
-  margin-bottom: 20px;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-form {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.contact h2 {
+  color: #333;
+  font-size: 1.5em; /* Increase font size */
+  margin-bottom: 15px; /* Increase margin bottom */
 }
 
-label {
-  margin-bottom: 8px;
-  font-weight: bold;
+.contact p {
+  color: #666;
+  line-height: 1.6; /* Adjust line height */
 }
 
-input,
-textarea {
+.contact form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contact form input[type="email"],
+.contact form textarea {
   width: 100%;
-  padding: 8px;
-  margin-bottom: 16px;
-  box-sizing: border-box;
-  border-radius: 10px;
-
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease; /* Adding transition effect */
 }
 
-button {
-  background-color: #3498db;
+.contact form input[type="email"]:focus,
+.contact form textarea:focus {
+  border-color: #007bff; /* Change border color on focus */
+}
+
+.contact form button[type="submit"] {
+  background-color: #007bff;
   color: #fff;
-  border: none;
   padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease; /* Adding transition effect */
 }
 
-button:hover {
-  background-color: #2980b9;
+.contact form button[type="submit"]:hover {
+  background-color: #0056b3; /* Change background color on hover */
 }
 
 .contact-info {
   margin-top: 20px;
 }
 
-
 .contact-info p {
-  margin: 8px 0;
-  font-weight: bold;
-  color: #555;
-}
-.container {
-  display: flex;
-}
-
-.content {
-  flex: 1; /* Take remaining space */
+  margin: 5px 0;
 }
 
 .map {
-  width: 400px; /* Set the width of the map */
-  margin-left: 20px; /* Add some space between the content and the map */
+  margin-top: 20px;
 }
 
+.map iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+  border-radius: 5px; /* Adding border radius */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding box shadow */
+}
 </style>

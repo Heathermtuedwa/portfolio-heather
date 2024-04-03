@@ -77,7 +77,7 @@ I enjoy Web design . I blend coding skills with design principles to create beau
 
 
 
-.about-me{background-color:#8e8888;overflow:hidden;}
+.about-me{background-color: rgb(69, 65, 65);;overflow:hidden;}
 
 .about-me .image{width:40%}
 

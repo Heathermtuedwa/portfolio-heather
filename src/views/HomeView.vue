@@ -9,11 +9,11 @@
       </div>
       <div class="text-box">
         <h1 class="heading-primary">
-          <span class="heading-primary-main">Heather Mtuedwa</span>
+           <span class="heading-primary-main">Heather Mtuedwa</span>
           <span class="heading-primary-sub">Portfolio</span>
         </h1>
-        <button class="btn">Enter</button>
-      </div>
+        <!-- <button class="btn">Enter</button> -->
+      </div> 
       <div class="socials">
         <div class="facebook">
           <a href="https://facebook.com">

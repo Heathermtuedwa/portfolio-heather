@@ -1,5 +1,6 @@
 <template >
   <body>
+    
     <nav>
         <router-link to="/">Home</router-link> 
         <router-link to="/about">About</router-link> 
@@ -22,6 +23,7 @@ nav {
   color: #fff; /* Change text color */
   padding: 10px 15px; /* Reduce padding */
   border-bottom: 2px solid #34495e; /* Add border at the bottom */
+  text-align: center;
 }
 
 /* Link styles with effect */

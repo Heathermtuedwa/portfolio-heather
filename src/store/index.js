@@ -7,6 +7,7 @@ export default createStore({
     Project: null,
     resume: null,
     testimonials: null,
+    skills:null,
   },
   getters: {},
   mutations: {
@@ -19,6 +20,10 @@ export default createStore({
     setTestimonial(state, testimonials) {
       state.testimonials = testimonials;
     },
+    setSkills(state, skills) {
+      state.skills = skills;
+    },
+    
   },
   actions: {
     async fetchProject(context){
@@ -62,5 +67,18 @@ export default createStore({
     } catch(e){
       
     }
+  },
+  async fetchskills(context){
+    try{
+      let res = await fetch(url)
+      let result = await res.json()
+      console.log(result.skills);
+      context.commit("setskills", result.skills)
+    } catch(e){
+
+
+    }
   }
+
+
 }})

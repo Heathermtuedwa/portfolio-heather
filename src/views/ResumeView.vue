@@ -1,21 +1,78 @@
 <template >
-       <class class="container">
-    <section class="education">
-      <div class="timeline">
-        <div v-for="res of $store.state.resume " v-bind:key="res.id" class="timeline-item">
-          <div class="timeline-content">
-            <h2>{{ res.name  }}</h2>
-            <p><b>{{ res.description}}</b></p>
-            
-          </div>
+  <div class="skills-section">
+    <div class="skills-header">
+     <h1>Skills</h1>   
+     </div>
+     <div class="skills-container">
+       
+      <div class="skills-box">
+       <div class="skills-title">
+       <div class="skills-img">
+        <img src="https://cdn.freebiesupply.com/logos/large/2x/html-5-logo-png-transparent.png"     alt="" class="skills-icons">
         </div>
-      </div>
-    </section> 
-      </class>
-      <section class="experience">
-     
-    </section> 
+         <h3>HTML</h3>
+        </div>
+        <!-- <P> Lorem  Lorem  Lorem  </P> -->
+       </div>
+       
+       
+        <div class="skills-box">
+       <div class="skills-title">
+       <div class="skills-img">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/CSS.3.svg" alt="" class="skills-icons">
+        </div>
+        <h3>CSS</h3>
+        </div>
+        <!-- <P> Lorem  Lorem  Lorem  </P>    -->
+       </div>
+       
+       
+        <div class="skills-box">
+       <div class="skills-title">
+       <div class="skills-img">
+        <img src="https://i.ibb.co/jRTFrpr/java-script.png" alt="" class="skills-icons">
+        </div>
+        <h3>JAVASCRIPT</h3>
+        </div>
+        <!-- <P> Lorem  Lorem  Lorem  </P> -->
+       </div>
+       
+          <div class="skills-box">
+       <div class="skills-title">
+       <div class="skills-img">
+        <img src="http://pluspng.com/img-png/nodejs-logo-png-nice-images-collection-node-js-desktop-wallpapers-370.png" alt="" class="skills-icons">
+        </div>
+        <h3>NODE.JS</h3>
+        </div>
+        <!-- <P> Lorem  Lorem  Lorem  </P> -->
+       </div>
+       
+          <div class="skills-box">
+       <div class="skills-title">
+       <div class="skills-img">
+        <img src="https://i.ibb.co/hMy6V8K/mysql.png" alt="" class="skills-icons">
+        </div>
+        <h3>MySQL</h3>
+        </div>
+        <!-- <P> Lorem  Lorem  Lorem  </P> -->
+       </div>
+       
+          <div class="skills-box">
+       <div class="skills-title">
+       <div class="skills-img">
+        <img src="https://i.ibb.co/pzdwhkv/document.png" alt="" class="skills-icons">
+        </div>
+        <h3>Vue.Js</h3>
+        </div>
+        <!-- <P> Lorem  Lorem  Lorem  </P> -->
+       </div>
+       
+       
+       </div>
     
+     </div>
+   
+   
     
 </template>
 
@@ -24,117 +81,171 @@ export default {
     computed:{
       resume(){
         return this.$store.state.resume
+      },
+      skills(){
+        return this.$store.skills
       }
+
     },
     mounted(){
       this.$store.dispatch("fetchResume")
+    },
+    methods: {
+      getSkills(){
+        this.$store.dispatch("fetchSkills")
+      }
     }
+
   }
 
 </script>
 
 <style scoped>
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: Arial, sans-serif;
+background-color: #484343;
+
+
 }
-h2 {
-  color: #333;
-  font-size: 30px;
-  margin-bottom: 20px;
-  font-weight: bold;
-  text-align: center;
+
+body{
+background: #ccc;
+/* height: 100vh; */
 }
-.timeline-item {
-  position: relative;
-  padding-bottom: 40px;
-  margin-bottom: 30px;
+
+.skills-section{
+padding-top: 20px;
 }
-.timeline-content {
-  width: 600px;
-  margin-left: 40px;
-  padding: 20px;
-  background-color: #F1F1F1;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+.skills-header{
+text-align: center;
+color: #fff;
+padding: 1rem;
+position: relative;
 }
-.timeline-content h3 {
-  color: #333;
-  font-size: 18px;
-  margin-bottom: 20px;
+
+.skills-header:after{
+content: '';
+position: absolute;
+bottom: 0;
+left: 50%;
+transform: translateX(-50%);
+width: 100px;
+height: 4px;
+background-color: #2ecc71;
+border-radius: 2px;
 }
-.timeline-content p {
-  color: #555;
-  font-size: 16px;
-  margin-bottom: 10px;
+
+.skills-container{
+display: grid;
+grid-tempLate-columns: repeat(5, 1fr);
+justify-content:center;
+align-items:center;
+text-align: center;
+grid-gap:1rem;
+padding: 1rem 80px;
+font-size: 1.2rem;
+/* height: 100vh; */
 }
-.timeline-item:first-child .timeline-content {
-  margin-top: 0;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+.skills-box{
+padding: 1rem;
+color: #000;
+cursor:pointer;
+/* height: 100vh; */
 }
-.timeline-item:last-child .timeline-content {
-  margin-bottom: 0;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+/* .skills-box:hover > .skills-title: after
+.skills-box:hover > .skills-title: before{
+width: 30px;
+} */
+.skills-box:hover .skills-img{
+transform: translateX(-20px);
 }
-.education,
-.experience,
-.skills {
-  margin-bottom: 40px;
+
+.skills-title{
+display:flex;
+flex-direction: column;
+align-items:center;
+padding: 0.5rem;
+margin-bottom: 0.5rem;
+position: relative;
 }
-.skills h2 {
-  color: #333;
-  font-size: 30px;
-  margin-bottom: 20px;
-  font-weight: bold;
-  text-align: center;
+
+.skills-title:after{
+content: '';
+position:absolute;
+bottom: 0;
+right: 50%;
+width:20px;
+height:4px;
+border-radius: 2px 0 0 2px;
+background-color: #2ecc71;
+transition: .5s;
 }
-.containerr {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  margin: 20px 0;
+
+.skills-title:before{
+content: '';
+position:absolute;
+bottom: 0;
+left: 50%;
+width:100px;
+height:4px;
+border-radius: 0 2px 2px 0;
+background-color: #2ecc71;
 }
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background-color: #F9F9F9; /* New background color */
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  flex: 0 0 calc(33.33% - 20px);
+
+.skills-icons{
+width:50px;
+z-index:2;
 }
-.card-img-top {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 10px;
+
+.skills-img{
+width:90px;
+height:90px;
+position: relative;
+border-radius: 45px;
+background-color: #fff;
+display:flex;
+justify-content:center;
+align-items:center;
+transition: .5s;
 }
-.card-text {
-  font-size: 16px;
-  font-weight: bold;
+
+.skills-img:after{
+content: '';
+position:absolute;
+top:0;
+left: 0;
+width:50%;
+height:90px;
+background: rgba(100, 100, 100, 0.5);
+border-radius: 45px 0 0 45px;
 }
-.card-link {
-  display: flex;
-  justify-content: center;
-  padding: 0.75rem 1.5rem;
-  background-color: rgb(178, 173, 173);
-  color: #FFFFFF;
-  text-decoration: none;
-  border-radius: 0.25rem;
-  transition: background-color 0.3s ease;
-  box-shadow: 4px 8px 0px rgb(110, 109, 109);
-  margin-top: 20px;
+.skills-title h3{
+color: #333;
+margin-top: 0.5rem;
 }
-.card-link:hover {
-  background-color: #F3DEBA;
+@media screen and (max-width:990px){
+ .skills-container{
+ grid-tempLate-columns: repeat(2, 1fr);
+ padding: 2rem 50px;
+ }
 }
+
+@media screen and (max-width:650px){
+ .skills-container{
+ grid-tempLate-columns:2fr;
+ padding: 2rem 50px;
+ }
+}
+
+.skills-section{
+  background-color: #484343 ;
+  height:200vh;
+}
+
+
+
 </style>
