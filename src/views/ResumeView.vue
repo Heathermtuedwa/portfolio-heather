@@ -69,8 +69,34 @@
        
        
        </div>
+
+       <h1 class="text">Education</h1>
+     <div class="skills" id="skill">
     
+    
+   <!--3 Columns of the Skills Page-->
+    <div class= "row">
+      <div class="col-md-4 text-center">
+        <h3>QueensPark High School</h3>
+        
+        <p class="text-center">I attended Queens Park in Woodstock for five years and graduated in 2022. My time there was filled with valuable experiences and learning opportunities. The supportive environment and engaging lessons helped me grow both academically and personally. </p>
+      </div>
+      
+      <div class="col-md-4 text-center">
+        <h3>LIFE Choice student academy</h3>
+        <p>
+As a student at LC Academy, I learned a lot and gained new skills, leading to personal growth. The supportive environment encouraged me to explore and challenge myself, shaping me into a full stack developer</p>
+      </div>
+      
+      <div class="col-md-4 text-center">
+        <h3>Life Choice Intern</h3>
+        <p>I am currently a LC intern, where I'm gaining valuable experience and learning a lot. Working with experienced professionals and contributing to projects is exciting and fulfilling. I look forward to continuing to grow and develop during my internship.</p>
+      </div>
+    </div>
+
      </div>
+
+  </div>
    
    
     
@@ -227,7 +253,7 @@ border-radius: 45px 0 0 45px;
 color: #333;
 margin-top: 0.5rem;
 }
-@media screen and (max-width:990px){
+/* @media screen and (max-width:990px){
  .skills-container{
  grid-tempLate-columns: repeat(2, 1fr);
  padding: 2rem 50px;
@@ -239,12 +265,38 @@ margin-top: 0.5rem;
  grid-tempLate-columns:2fr;
  padding: 2rem 50px;
  }
-}
+} */
 
 .skills-section{
   background-color: #484343 ;
-  height:200vh;
+  /* height:150vh; */
+  background-size: contain;
 }
+
+.skills {
+    padding: 50px 40px 50px 40px;
+
+    color: black;
+}
+
+
+.skills-section{
+  padding:30px 0px 50px 0px;
+}
+
+
+.portfolio {
+    padding: 80px 0 50px 0px;
+     
+}
+
+.portfolio p{
+  padding: 30px 30px;
+
+  
+  
+}
+
 
 
 

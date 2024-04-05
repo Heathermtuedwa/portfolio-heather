@@ -1,16 +1,67 @@
 <template>
-  <body>
-    <div class="Projects">
-        <div v-for="Project in Project" :key="Project.id" class="card" style="width: 27rem;">
-            <img :src=" Project.url" class="card-img-top" :alt="Project.ProjectName">
-            <div class="card-body">
-              <h5 class="card-title">{{Project.ProjectName}}</h5>
-              <a :href="Project.github" target="_blank"  class="btn btn-primary">GitHub</a>
-              <a :href="Project.vercel" target="_blank" class="btn btn-primary">Vercel</a>
-            </div>
-          </div>
+<section id="portfolio-section">
+  <div class="container-fluid text-white pb-5">
+    <div class="row text-center text-uppercase pt-5">
+      <hr class="col hr-white">
+        <h1 class="col-4">Projects</h1> 
+      <hr class="col hr-white">         
+    </div>   
+  <div class="container-fluid mb-5">
+    <div class="row justify-content-center my-5">    
+       <div class="card text-center mx-3 mb-5">
+         <div class="content-overlay card-container">       
+          <p class="content-text">CapStone</p>          
+          <a href="https://github.com/Heathermtuedwa/backend_capstone.git" target="_blank" class="btn btn-light content-text">GitHub</a>  
+          <a href="" target="_blank" class="btn btn-light content-text">FireBase</a>         
+         </div>        
+         <img class="card-img-top card-image" src="https://i.ibb.co/zhPZ0dP/5bdbfa5d-2e97-4f84-9a09-bcde5ef9a22c.webp" alt="Card image cap">       
+       </div> 
+         <div class="card text-center mx-3 mb-5">
+         <div class="content-overlay card-container text-white">         
+           <p class="content-text px-2">Netflix </p>
+           <a href="https://github.com/Heathermtuedwa/Netflix-project.git" target="_blank" class="btn btn-light content-text">Github</a>
+           <a href="https://netflix-project-roan.vercel.app/" target="_blank" class="btn btn-light content-text">Vercel</a>
+         </div>       
+         <img class="card-img-top card-image" src="
+         https://iili.io/JYJfWkF.jpg" alt="Card image cap">       
+       </div>         
+   <div class="card text-center mx-3 mb-5">
+         <div class="content-overlay card-container text-white">
+           <p class="content-text">Age-to-Days</p>
+           <a href="https://github.com/Heathermtuedwa/AgeToDays.git" class="btn btn-light content-text">Github</a>
+           <a href="https://age-to-days-orcin.vercel.app/" target="_blank" class="btn btn-light content-text">Vercel</a>
+         </div>        
+         <img class="card-img-top card-image" src="https://iili.io/JYJVKvI.pngue" alt="Card image cap">       
+       </div>   
+       <div class="card text-center mx-3 mb-5">
+         <div class="content-overlay card-container text-white">
+           <p class="content-text">To-Do-List</p>
+           <a href="https://github.com/Heathermtuedwa/todo---list.git" class="btn btn-light content-text">Github</a>
+           <a href="https://todo-list-3s1q.vercel.app/" target="_blank" class="btn btn-light content-text">Vercel</a>
+         </div>        
+         <img class="card-img-top card-image" src="https://iili.io/JYJGbsf.png" alt="Card image cap">       
+       </div>   
+       <div class="card text-center mx-3 mb-5">
+         <div class="content-overlay card-container text-white">
+           <p class="content-text">E-commerce</p>
+           <a href="https://github.com/Heathermtuedwa/E-commerce-website.git" class="btn btn-light content-text">Github</a>
+           <a href="https://e-commerce-website-beta-sand.vercel.app/" target="_blank" class="btn btn-light content-text">Vercel</a>
+         </div>        
+         <img class="card-img-top card-image" src="https://iili.io/JYJEiZb.jpg" alt="Card image cap">       
+       </div>   
+       <div class="card text-center mx-3 mb-5">
+         <div class="content-overlay card-container text-white">
+           <p class="content-text">interest-amount</p>
+           <a href="https://github.com/Heathermtuedwa/interestAmount.git" class="btn btn-light content-text">Github</a>
+           <a href="https://interest-amount-one.vercel.app" target="_blank" class="btn btn-light content-text">Vercel</a>
+         </div>        
+         <img class="card-img-top card-image" src="https://iili.io/JYJXwBa.png" alt="Card image cap">       
+       </div>    
     </div>
-  </body>
+  </div>
+ </div>
+  <span id="end-of-portfolio-section" />
+</section>
     
 </template>
 <script>
@@ -28,58 +79,72 @@ export default {
 </script>
 <style scoped>
 
-body{
-  height: 100vh;
+#portfolio-section {
+  background-color: #000; 
+  }
+.imageSelf {
+  height: 200px;
+  border-radius: 50%;  
 }
-.Projects {
+.hr-white {
+  border-top: 1px solid white;
+  position: relative;
+  top: 10px;  
+}
+.card-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  
-}
+  align-content:space-evenly;
+  justify-content: center; 
+} 
 .card {
-  width: 5rem;
-  border: 1px solid #3498db; /* Updated border color */
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Updated box-shadow */
-  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Added transition properties */
+  transform: translateY(12px); 
+  height: 450px;
+  width: 350px;
+  border: 0px solid black; 
+  border-radius: 5%
+}
+ .card:hover {
+    transform: translateY(0px);      
+   }
+.card-image {
+  height: 450px;
+  border-radius: 5%
+}
+.content-overlay {
+  background: rgba(0,0,0,0.7);
+  opacity: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  font-size: 2em; 
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;  
+}
+.card:hover .content-overlay{
+  opacity: 1;
+}
+.content-text { 
+  display: flex;
+  align-content: center;
 }
 
-.card:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Updated box-shadow on hover */
-  transform: scale(1.05); /* Added scale transformation on hover */
-}
-.card-img-top {
-  height: 200px;
-  object-fit: cover;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-.card-body {
-  padding: 1rem;
-}
-.card-title {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-.btn-primary {
-  background-color: #6f2826; /* Updated background color */
-  color: #fff;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
   text-decoration: none;
-  margin: 7px;
-  border-radius: 0.25rem;
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Updated transition properties */
-  box-shadow: 2px 4px 0px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  background-color: #007bff; /* Blue background */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.btn-primary:hover {
-  background-color: #371727; /* Updated background color on hover */
-  color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Updated box-shadow on hover */
-  transform: scale(1.1); /* Added scale transformation on hover */
+.btn:hover {
+  background-color: #0056b3; /* Darker blue background on hover */
 }
 </style>

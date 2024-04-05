@@ -1,119 +1,112 @@
 <template >
-    <div class="contact">
-    <h2>Contact Me</h2>
-    <p>Feel free to reach out to me using the form below or through the provided contact information.</p>
-    <form
-  action="https://formspree.io/f/mnqkljjd"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  
-  <button type="submit">Send</button>
-</form>
-    <div class="contact-info">
-      <p>heathermtuedwa@gmail.com</p>
-      <p>Phone: 065 526 1545 </p>
+ <a class="anchor" id="contact-link"></a>
+    <div id="contact" class="container-fluid text-center">
+      <h1>Contact</h1>
+      <hr />
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <h2>Social</h2>
+            <a href="https://twitter.com/hash004">
+              <span class="fa-stack fa-3x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa-brands fa-whatsapp fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+            <a href="https://uk.linkedin.com/in/hashambabar">
+              <span class="fa-stack fa-3x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+            <a href="https://github.com/Heathermtuedwa">
+              <span class="fa-stack fa-3x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github-alt fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+            <a href="065 526 1545">
+              <span class="fa-stack fa-3x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa-solid fa-phone fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </div>
+          <div class="col-lg-4">
+            <h2>Location</h2>
+            <address>
+             Charlesville
+            </address>
+            <div class="embed-responsive embed-responsive-4by3">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6618.478888037687!2d18.556915564837574!3d-33.960684616268146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc44d455026ac1%3A0xb14952350b32e3c4!2sCharlesville%2C%20Cape%20Town%2C%207490%2C%20South%20Africa!5e0!3m2!1sen!2sus!4v1712223591023!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <h2>Communication</h2>
+            <a href="mailto:heathermtuedwa@gmail.com">
+              <span class="fa-stack fa-3x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-
-  </div >
-  <div class="container">
-  <div class="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6618.478888037705!2d18.556915564837613!3d-33.96068461626794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc44d455026ac1%3A0xb14952350b32e3c4!2sCharlesville%2C%20Cape%20Town%2C%207490!5e0!3m2!1sen!2sza!4v1709641065177!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">" width="400" height="300" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-  </div>
-  </div>
 </template>
 
 
 
-    <style>
-     .contact {
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-  animation: fadeIn 0.5s ease-in-out; /* Adding fadeIn animation */
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.contact h2 {
-  color: #333;
-  font-size: 1.5em; /* Increase font size */
-  margin-bottom: 15px; /* Increase margin bottom */
-}
-
-.contact p {
-  color: #666;
-  line-height: 1.6; /* Adjust line height */
-}
-
-.contact form label {
-  display: block;
-  margin-bottom: 10px;
-}
-
-.contact form input[type="email"],
-.contact form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  transition: border-color 0.3s ease; /* Adding transition effect */
-}
-
-.contact form input[type="email"]:focus,
-.contact form textarea:focus {
-  border-color: #007bff; /* Change border color on focus */
-}
-
-.contact form button[type="submit"] {
-  background-color: #007bff;
+    <style scoped>
+  #contact{
+  background-image: url(https://raw.githubusercontent.com/hash004/freecodecamp/master/portfolioPage/images/contact.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  padding-bottom: 50px;
   color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease; /* Adding transition effect */
+  height: 100vh;
 }
 
-.contact form button[type="submit"]:hover {
-  background-color: #0056b3; /* Change background color on hover */
-}
+  #contact h1{
+    font-size: 5em;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.5),
+                 0px 18px 23px rgba(0,0,0,0.1);
+  }
 
-.contact-info {
-  margin-top: 20px;
-}
+  #contact h2{
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.5),
+                 0px 18px 23px rgba(0,0,0,0.1);
+  }
 
-.contact-info p {
-  margin: 5px 0;
-}
+  #contact address{
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: bold;
+  }
 
-.map {
-  margin-top: 20px;
-}
+  #contact .fa-stack{
+    color: #333;
+  }
 
-.map iframe {
-  width: 100%;
-  height: 400px;
-  border: none;
-  border-radius: 5px; /* Adding border radius */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding box shadow */
-}
+  #contact .fa-stack:hover .fa-stack-1x{
+    color: #333;
+    transition: 0.5s;
+  }
+
+  #contact .fa-stack:hover .fa-stack-2x{
+    color: #fff;
+    transition: 0.5s;
+  }
+
+  #contact a{
+    text-decoration: none;
+  }
+
+/* hr{
+  width: 25%;
+}t a:hover { color: #39F; }on: fadeIn 1s; */
+
 </style>

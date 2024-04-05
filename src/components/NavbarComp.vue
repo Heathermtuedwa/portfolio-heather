@@ -1,14 +1,47 @@
 <template >
   <body>
     
-    <nav>
+    <div class="navbar   navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/project">Project</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/resume">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/testimonial">Testimonial</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </div>
+ 
+    
+    <nav class="d-md-block d-sm-none">
         <router-link to="/">Home</router-link> 
         <router-link to="/about">About</router-link> 
         <router-link to="/project">Project</router-link> 
-        <router-link to="/resume">Resume</router-link> 
+        <router-link to="/resume">Education/Skills</router-link> 
         <router-link to="/testimonial">Testimonial</router-link>
         <router-link to="/contact">Contact</router-link> 
   </nav>
+
+  
   </body>
 </template>
 <script>
@@ -16,12 +49,12 @@ export default {
     
 }
 </script>
-<style >
+<style scoped>
 nav {
   font-family: Arial, sans-serif; /* Change font */
   background-color: rgb(64, 62, 62); /* Change background color */
   color: #fff; /* Change text color */
-  padding: 10px 15px; /* Reduce padding */
+  padding: 30px 15px; /* Reduce padding */
   border-bottom: 2px solid #34495e; /* Add border at the bottom */
   text-align: center;
 }
@@ -83,5 +116,20 @@ nav router-link:after {
 nav router-link:hover:before,
 nav router-link:hover:after {
   transform: translate(0, 0);
+}
+nav {
+  display: none; /* Initially hide the Bootstrap navbar */
+}
+
+@media (min-width: 576px) {
+  nav {
+    display: none; /* Hide the second navbar on small screens */
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    display: none; /* Hide the Bootstrap navbar on medium screens */
+  }
 }
 </style>
