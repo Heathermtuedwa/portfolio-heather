@@ -12,7 +12,7 @@
          <div class="content-overlay card-container">       
           <p class="content-text">CapStone</p>          
           <a href="https://github.com/Heathermtuedwa/backend_capstone.git" target="_blank" class="btn btn-light content-text">GitHub</a>  
-          <a href="" target="_blank" class="btn btn-light content-text">FireBase</a>         
+          <a href="capestone-550f9.firebaseapp.com" target="_blank" class="btn btn-light content-text">FireBase</a>         
          </div>        
          <img class="card-img-top card-image" src="https://i.ibb.co/zhPZ0dP/5bdbfa5d-2e97-4f84-9a09-bcde5ef9a22c.webp" alt="Card image cap">       
        </div> 

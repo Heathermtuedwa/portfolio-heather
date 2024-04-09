@@ -13,7 +13,7 @@
                 <i class="fa-brands fa-whatsapp fa-stack-1x fa-inverse"></i>
               </span>
             </a>
-            <a href="https://uk.linkedin.com/in/hashambabar">
+            <a href="https://www.linkedin.com/in/heather-heather-808b922b7/">
               <span class="fa-stack fa-3x">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
@@ -29,6 +29,7 @@
               <span class="fa-stack fa-3x">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa-solid fa-phone fa-stack-1x fa-inverse"></i>
+                <p>(0655261545)</p>
               </span>
             </a>
           </div>
@@ -47,6 +48,7 @@
               <span class="fa-stack fa-3x">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+              <p>heathermtuedwa@gmail.com</p>
               </span>
             </a>
           </div>
@@ -109,4 +111,10 @@
   width: 25%;
 }t a:hover { color: #39F; }on: fadeIn 1s; */
 
+#contact p{
+  padding-top: 50%;
+ font-size: 0.5em;
+ padding-right:90%;
+ color: #6e6b6b;
+}
 </style>
